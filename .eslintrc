@@ -1,0 +1,28 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+      "sourceType": "module",
+      "allowImportExportEverywhere": false,
+      "codeFrame": false
+  },
+  "extends": ["standard", "plugin:react/recommended", "prettier"],
+  "env": {
+      "browser": true,
+      "es2021": true
+  },
+  "rules": {
+    "import/prefer-default-export": "off",
+    "jsx-quotes": ["error", "prefer-single"],
+    "eqeqeq": ["error", "smart"],
+    "react/display-name": ["off"],
+    "react/prop-types": ["off"],
+    "no-unused-vars": ["warn"],
+    "no-useless-escape": ["off"],
+    "prefer-promise-reject-errors": ["off"],
+    "no-return-assign": ["off"],
+    "eol-last": ["warn", "always"],
+    "comma-dangle": ["warn", "never"],
+    "no-prototype-builtins": "off"
+  },
+  "plugins": ["standard", "react"]
+}
